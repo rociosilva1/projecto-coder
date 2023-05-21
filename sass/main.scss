@@ -1,15 +1,34 @@
-/* MAIN-SECTION-CONTAINERS-SKILLS */
-.skill-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5rem;
-    margin-bottom: 2rem;
-
-    .a {
-        text-decoration: none;
-        color: #242121;
-    }
+/*GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/*FONTS*/
+@font-face {
+    font-family: inria-sans;
+    src: url(../Assets/ttf/inria-sans.bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: inria-sans-regular;
+    src: url(../Assets/ttf/inria-sans.regular.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: inria-sans-light;
+    src: url(../Assets/ttf/inria-sans.light.ttf);
+    font-weight: lighter;
+}
+
+/* BODY */
+body {
+    background-color: #fafafa;
+}
+
+@import './views/Index.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
