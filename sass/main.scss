@@ -1,10 +1,3 @@
-/*GENERAL*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*FONTS*/
 @font-face {
     font-family: inria-sans;
@@ -24,11 +17,7 @@
     font-weight: lighter;
 }
 
-/* BODY */
-body {
-    background-color: #fafafa;
-}
-
 @import './views/Index.scss';
 @import './components/header.scss';
 @import './components/footer.scss';
+@import './utils/variables'

@@ -1,0 +1,49 @@
+/* SKILL-PAGE-MAIN */
+.title-page {
+    margin-top: 10%;
+    padding: 1rem 2rem;
+    font-family: "inria-sans";
+}
+  
+.skill-defined {
+    display: flex;
+    font-family: "inria-sans-regular";
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+  
+    &-box {
+      width: 30%;
+      height: 40%;
+      background-color: #f5f5f5;
+      border: 2px solid #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 3px 3px 3px 0px #9e9696;
+      padding: 3%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      text-align: center;
+  
+      img {
+        width: 100%;
+      }
+  
+      h1 {
+        font-family: "inria-sans-regular";
+        font-size: 20px;
+        &.carousel-ux-ui {
+          // Estilos adicionales específicos para .carousel-ux-ui
+        }
+      }
+    }
+  
+    p {
+      text-align: right;
+      width: 50%;
+    }
+  }
+  
