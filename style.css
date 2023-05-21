@@ -1,0 +1,578 @@
+/*GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FONTS*/
+@font-face {
+    font-family: inria-sans;
+    src: url(./Assets/ttf/inria-sans.bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: inria-sans-regular;
+    src: url(./Assets/ttf/inria-sans.regular.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: inria-sans-light;
+    src: url(./Assets/ttf/inria-sans.light.ttf);
+    font-weight: lighter;
+}
+
+/* BODY */
+body {
+    background-color: #fafafa;
+}
+
+/* HEADER */
+.top-bar {
+    background-color: #242121;
+    color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.logo img {
+    height: 5rem;
+    margin-left: 2rem;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 2rem;
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.menu a {
+    color: #fafafa;
+    font-family: "inria-sans-regular";
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.top-bar nav ul li a:hover {
+    color: #D4B200;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* MAIN-SECTION-IMAGE-WITH-TEXT */
+.header-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0rem;
+    position: absolute;
+    top: 10rem;
+    left: 10%;
+    line-height: 3rem;
+}
+
+.image-portfolio {
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-portfolio img {
+    width: 100%;
+    height: auto;
+}
+
+.header-left h1 {
+    color: #9e9696;
+    font-size: 3rem;
+    font-family: "inria-sans";
+    line-height: 45%;
+}
+
+.header-left h2 {
+    color: #fafafa;
+    font-size: 3rem;
+    font-family: "inria-sans";
+}
+
+.header-left h3 {
+    color: #fafafa;
+    font-size: 20px;
+    font-family: "inria-sans-regular";
+    line-height: 3rem;
+}
+
+/* MAIN-SECTION-WHY-ME */
+.why-me {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.why-me p {
+    font-family: "inria-sans-light";
+    line-height: 25px;
+    text-align: right;
+}
+
+.why-me h3 {
+    text-align: right;
+}
+
+.section-title {
+    color: #242121;
+    font-size: 36px;
+    margin-bottom: 2rem;
+    font-family: "inria-sans-regular";
+}
+
+.why-me div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-acerca-de-mi {
+    display: inline-block;
+    margin-top: 2rem;
+    text-align: center;
+    width: fit-content;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: "inria-sans";
+    color: #423C3C;
+    border: 2px solid #423C3C;
+    background-color: #fafafa;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 3rem;
+}
+
+.button-acerca-de-mi:hover {
+    background-color: #423C3C;
+    color: #fafafa;
+}
+
+/* MAIN-SECTION-CONTAINERS-SKILLS */
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-container a {
+    text-decoration: none;
+    color: #242121;
+}
+
+.section-title-skills {
+    color: #242121;
+    font-size: 36px;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-family: "inria-sans-regular";
+}
+
+.skill-container-item {
+    width: 80%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    box-shadow: 3px 3px 3px 0px #9e9696;
+    border-radius: 10px;
+}
+
+.skill-container-item:hover {
+    background-color: #D4B200;
+}
+
+.skill-container-item h2 {
+    font-family: "inria-sans-regular";
+    font-size: 20px;
+}
+
+.button-skill {
+    display: inline-block;
+    margin: 45%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: "inria-sans";
+    color: #423C3C;
+    border: 2px solid #423C3C;
+    background-color: #fafafa;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-skill:hover {
+    background-color: #423C3C;
+    color: #fafafa;
+}
+
+/* MAIN-SECTION-PROJECTS */
+.projects {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.carousel-img-wrapper {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: #fafafa;
+    background-color: #242121;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-img-wrapper:hover .carousel-caption {
+    opacity: 1;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #242121;
+    color: #fafafa;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 100%;
+    font-family: "inria-sans-regular";
+}
+
+.footer p {
+    font-size: 16px;
+    justify-content: space-between;
+    margin-bottom: 0%;
+}
+
+.footer-left {
+    text-align: left;
+    margin-left: 2rem;
+    line-height: 2rem;
+    margin-bottom: 0%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.footer-right {
+    text-align: right;
+    padding: 2rem;
+    margin-bottom: 0%;
+}
+
+/*SKILL-PAGE-MAIN*/
+.title-page {
+    margin-top: 10%;
+    padding: 1rem 2rem;
+    font-family: "inria-sans";
+}
+
+.skill-defined {
+    display: flex;
+    font-family: "inria-sans-regular";
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+}
+
+.skill-defined-box {
+    width: 30%;
+    height: 40%;
+    background-color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 0px #9e9696;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-defined-box h1 {
+    font-family: "inria-sans-regular";
+    font-size: 20px;
+}
+
+.skill-defined p {
+    text-align: right;
+    width: 50%;
+}
+
+/* ABOUTME-PAGE-MAIN */
+/* Estilos del título */
+.title {
+    font-family: "inria-sans";
+}
+
+/* CONTACT-PAGE-MAIN */
+.body-contact {
+    background-color: #423C3C;
+}
+
+/* Estilos del contenedor */
+.container {
+    display: grid;
+    align-items: center;
+    max-width: 50%;
+    box-shadow: 3px 3px 3px 0px #fafafa;
+    padding: 2rem;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+
+/* Estilos del formulario */
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+    max-height: 90%;
+    padding: 5%;
+}
+
+/* Estilos de los grupos de campos */
+.form__group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+/* Estilos de las etiquetas de los campos */
+.form__label {
+    display: flex;
+    font-family: "inria-sans-regular";
+}
+
+/* Estilos de los campos de entrada */
+.form__input,
+.form__textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #242121;
+    font-size: 16px;
+    font-family: "inria-sans-regular";
+}
+
+/* Estilos del botón de enviar */
+.form__button {
+    background-color: #242121;
+    color: #fafafa;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 35%;
+    width: 30%;
+    text-align: center;
+}
+
+.form__button:hover {
+    background-color: #D4B200;
+    color: #242121;
+}
+
+@media (max-width: 850px) {
+
+    /* MAIN-SECTION-IMAGE-WITH-TEXT-IPAD */
+    .header-left {
+        padding: 0rem;
+        top: 9rem;
+    }
+
+    .image-portfolio img {
+        margin-top: 8%;
+    }
+
+    /* MAIN-SECTION-CONTAINERS-SKILLS-IPAD */
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button-skill {
+        margin: 38%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 20%;
+    }
+
+    /* CONTACT-PAGE-MAIN-IPAD */
+
+    .container-all {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 75%;
+        margin-top: 15%;
+        height: 90%;
+        padding: 0 5%;
+    }
+
+    /* SKILL-PAGE-MAIN-IPAD */
+    .title-page {
+        margin-top: 13%;
+    }
+}
+
+@media (max-width: 630px) {
+
+    /* NAV-BAR-IPAD-small */
+    .menu ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        height: 1.5rem;
+        margin-right: 2rem;
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    /* MAIN-SECTION-IMAGE-WITH-TEXT-IPAD-small */
+    .header-left {
+        padding: 0rem;
+        top: 8rem;
+    }
+
+    .header-left h1 {
+        font-size: 2rem;
+    }
+
+    .header-left h2 {
+        font-size: 2rem;
+    }
+
+    .header-left h3 {
+        font-size: 1rem;
+    }
+
+    .image-portfolio img {
+        margin-top: 5%;
+    }
+
+    /* MAIN-SECTION-CONTAINERS-SKILLS-IPAD-small */
+    .button-skill {
+        margin: 40%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 20%;
+    }
+
+    /* CONTACT-PAGE-MAIN-IPAD-small */
+    .container {
+        max-width: 80%;
+        margin-top: 20%;
+    }
+
+    /* SKILL-PAGE-MAIN-IPAD-small */
+    .title-page {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 530px) {
+
+    /* MAIN-SECTION-IMAGE-WITH-TEXT-MOBILE-big */
+    .image-portfolio img {
+        margin-top: 10%;
+    }
+
+    /* MAIN-SECTION-CONTAINERS-SKILLS-MOBILE-big */
+    .skill-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* MAIN-SECTION-CONTAINERS-SKILLS-MOBILE-big */
+    .button-skill {
+        margin: 35%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 30%;
+    }
+
+    /* CONTACT-PAGE-MAIN-MOBILE-big */
+    .container {
+        max-width: 90%;
+        margin-top: 25%;
+    }
+
+    /* SKILL-PAGE-MAIN-MOBILE-big */
+    .title-page {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-left h3 {
+        display: none;
+
+    }
+
+    /* CONTACT-PAGE-MAIN-MOBILE */
+    .container {
+        max-width: 95%;
+        margin-top: 25%;
+    }
+
+    /* SKILL-PAGE-MAIN-MOBILE */
+    .title-page {
+        margin-top: 22%;
+    }
+}

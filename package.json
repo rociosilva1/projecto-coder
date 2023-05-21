@@ -1,0 +1,14 @@
+{
+  "name": "proyecto_coder-main",
+  "version": "1.0.0",
+  "description": "Este proyecto es un sitio web de portafolio personal que muestra mis trabajos y habilidades. Está desarrollado utilizando HTML, SASS, CSS y sigue la convención de nomenclatura Camel Case.",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "sass ./sass/main.scss ./css/main.css -w --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

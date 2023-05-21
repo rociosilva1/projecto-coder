@@ -1,0 +1,15 @@
+/* MAIN-SECTION-CONTAINERS-SKILLS */
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+
+    .a {
+        text-decoration: none;
+        color: #242121;
+    }
+}
