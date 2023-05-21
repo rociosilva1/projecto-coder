@@ -17,7 +17,15 @@
     font-weight: lighter;
 }
 
+/*Pages*/
 @import './views/Index.scss';
+@import './views/AboutMe.scss';
+@import './views/Contact.scss';
+@import './views/skills.scss';
+
+/*Components*/
 @import './components/header.scss';
 @import './components/footer.scss';
-@import './utils/variables'
+
+/*utils*/
+@import './utils/variables';

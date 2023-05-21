@@ -1,0 +1,112 @@
+/* CONTACT-PAGE-MAIN */
+.body-contact {
+    background-color: #423C3C;
+}
+
+/* Estilos del contenedor */
+.container {
+    display: grid;
+    align-items: center;
+    max-width: 50%;
+    box-shadow: 3px 3px 3px 0px #fafafa;
+    padding: 2rem;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    background-color: #fafafa;
+
+    /* Estilos del formulario */
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2.5rem;
+        max-height: 90%;
+        padding: 5%;
+
+        /* Estilos de los grupos de campos */
+        &__group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+        }
+
+        /* Estilos de las etiquetas de los campos */
+        &__label {
+            display: flex;
+            font-family: "inria-sans-regular";
+        }
+
+        /* Estilos de los campos de entrada */
+        &__input,
+        &__textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #242121;
+            font-size: 16px;
+            font-family: "inria-sans-regular";
+        }
+
+        /* Estilos del botón de enviar */
+        &__button {
+            background-color: #242121;
+            color: #fafafa;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 35%;
+            width: 30%;
+            text-align: center;
+
+            &:hover {
+                background-color: #D4B200;
+                color: #242121;
+            }
+        }
+    }
+}
+
+ 
+@media (max-width: 850px) {
+    /* CONTACT-PAGE-MAIN-IPAD */
+    .container-all {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 75%;
+        margin-top: 15%;
+        height: 90%;
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 630px) {
+
+    /* CONTACT-PAGE-MAIN-IPAD-small */
+    .container {
+        max-width: 80%;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 530px) {
+
+    /* CONTACT-PAGE-MAIN-MOBILE-big */
+    .container {
+        max-width: 90%;
+        margin-top: 25%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    /* CONTACT-PAGE-MAIN-MOBILE */
+    .container {
+        max-width: 95%;
+        margin-top: 25%;
+    }
+}

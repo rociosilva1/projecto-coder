@@ -32,12 +32,9 @@
         width: 100%;
       }
   
-      h1 {
+      h1.carousel-ux-ui {
         font-family: "inria-sans-regular";
         font-size: 20px;
-        &.carousel-ux-ui {
-          // Estilos adicionales específicos para .carousel-ux-ui
-        }
       }
     }
   
@@ -45,5 +42,36 @@
       text-align: right;
       width: 50%;
     }
-  }
+}
   
+
+@media (max-width: 850px) {
+    /* SKILL-PAGE-MAIN-IPAD */
+    .title-page {
+        margin-top: 13%;
+    }
+}
+
+@media (max-width: 630px) {
+
+    /* SKILL-PAGE-MAIN-IPAD-small */
+    .title-page {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 530px) {
+
+    /* SKILL-PAGE-MAIN-MOBILE-big */
+    .title-page {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    /* SKILL-PAGE-MAIN-MOBILE */
+    .title-page {
+        margin-top: 22%;
+    }
+}
