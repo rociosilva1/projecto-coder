@@ -8,12 +8,12 @@
     display: grid;
     align-items: center;
     max-width: 50%;
-    box-shadow: 3px 3px 3px 0px #fafafa;
+    box-shadow: 3px 3px 3px 0px $colorwhite;
     padding: 2rem;
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     border-radius: 10px;
-    background-color: #fafafa;
+    background-color: $colorwhite;
 
     /* Estilos del formulario */
     .form {
@@ -49,7 +49,7 @@
         /* Estilos del botón de enviar */
         &__button {
             background-color: #242121;
-            color: #fafafa;
+            color: $colorwhite;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
@@ -58,6 +58,7 @@
             margin-left: 35%;
             width: 30%;
             text-align: center;
+            transition: background-color 0.3s ease-in-out;
 
             &:hover {
                 background-color: #D4B200;

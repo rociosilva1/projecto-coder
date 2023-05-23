@@ -7,14 +7,13 @@
     img {
         width: 100%;
         height: auto;
+        transform: translate (-50%, -50%);
     }
 }
 
 .header-left {
+    @include displayflex (space-between, $column: true);
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 0rem;
     position: absolute;
     top: 10rem;
@@ -29,13 +28,13 @@
     }
 
     h2 {
-        color: #fafafa;
+        color: $colorwhite;
         font-size: 3rem;
         font-family: "inria-sans";
     }
 
     h3 {
-        color: #fafafa;
+        color: $colorwhite;
         font-size: 20px;
         font-family: "inria-sans-regular";
         line-height: 3rem;
@@ -65,8 +64,7 @@
     }
 
     div {
-        display: flex;
-        justify-content: center;
+        @include displayflex (center, $column: false);
         text-align: center;
     }
 
@@ -80,7 +78,7 @@
         font-family: "inria-sans";
         color: #423C3C;
         border: 2px solid #423C3C;
-        background-color: #fafafa;
+        background-color: $colorwhite;
         border-radius: 5px;
         text-decoration: none;
         transition: background-color 0.3s ease-in-out;
@@ -88,7 +86,7 @@
 
         &:hover {
             background-color: #423C3C;
-            color: #fafafa;
+            color: $colorwhite;
         }
     }
 }
@@ -108,16 +106,15 @@
         color: #242121;
 
         .skill-container-item {
+            @include displayflex (space-evenly, $column: true);
             width: 80%;
             height: 15rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
             align-items: center;
             text-align: center;
             background-color: #f5f5f5;
             box-shadow: 3px 3px 3px 0px #9e9696;
             border-radius: 10px;
+            transition: background-color 0.3s ease-in-out;
         
             &:hover {
                 background-color: #D4B200;

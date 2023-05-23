@@ -1,21 +1,6 @@
-/*FONTS*/
-@font-face {
-    font-family: inria-sans;
-    src: url(../Assets/ttf/inria-sans.bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: inria-sans-regular;
-    src: url(../Assets/ttf/inria-sans.regular.ttf);
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: inria-sans-light;
-    src: url(../Assets/ttf/inria-sans.light.ttf);
-    font-weight: lighter;
-}
+/*utils*/
+@import './utils/global.scss';
+@import './utils/variables';
 
 /*Pages*/
 @import './views/Index.scss';
@@ -27,5 +12,4 @@
 @import './components/header.scss';
 @import './components/footer.scss';
 
-/*utils*/
-@import './utils/variables';
+

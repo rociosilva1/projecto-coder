@@ -1,20 +1,32 @@
 @charset "UTF-8";
+/*utils*/ /*GENERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*FONTS*/
 @font-face {
   font-family: inria-sans;
-  src: url(../Assets/ttf/inria-sans.bold.ttf);
+  src: url(../../Assets/ttf/inria-sans.bold.ttf);
   font-weight: bold;
 }
 @font-face {
   font-family: inria-sans-regular;
-  src: url(../Assets/ttf/inria-sans.regular.ttf);
+  src: url(../../Assets/ttf/inria-sans.regular.ttf);
   font-weight: 100;
 }
 @font-face {
   font-family: inria-sans-light;
-  src: url(../Assets/ttf/inria-sans.light.ttf);
+  src: url(../../Assets/ttf/inria-sans.light.ttf);
   font-weight: lighter;
 }
+/* BODY */
+body {
+  background-color: #fafafa;
+}
+
 /*Pages*/
 /* MAIN-SECTION-IMAGE-WITH-TEXT */
 .image-portfolio {
@@ -25,13 +37,14 @@
 .image-portfolio img {
   width: 100%;
   height: auto;
+  transform: translate -50%, -50%;
 }
 
 .header-left {
-  text-align: left;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
   padding: 0rem;
   position: absolute;
   top: 10rem;
@@ -116,16 +129,17 @@
   color: #242121;
 }
 .skill-container a .skill-container-item {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
   width: 80%;
   height: 15rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   background-color: #f5f5f5;
   box-shadow: 3px 3px 3px 0px #9e9696;
   border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
 }
 .skill-container a .skill-container-item:hover {
   background-color: #D4B200;
@@ -276,7 +290,7 @@
   box-shadow: 3px 3px 3px 0px #fafafa;
   padding: 2rem;
   margin-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   border-radius: 10px;
   background-color: #fafafa;
   /* Estilos del formulario */
@@ -319,6 +333,7 @@
   margin-left: 35%;
   width: 30%;
   text-align: center;
+  transition: background-color 0.3s ease-in-out;
 }
 .container .form__button:hover {
   background-color: #D4B200;
@@ -369,14 +384,17 @@
 
 .skill-defined {
   display: flex;
+  justify-content: space-evenly;
   font-family: "inria-sans-regular";
   align-items: center;
   margin-left: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  justify-content: space-evenly;
 }
 .skill-defined-box {
+  display: flex;
+  justify-content: none;
+  flex-direction: column;
   width: 30%;
   height: 40%;
   background-color: #f5f5f5;
@@ -384,8 +402,6 @@
   border-radius: 10px;
   box-shadow: 3px 3px 3px 0px #9e9696;
   padding: 3%;
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
   align-items: center;
   text-align: center;
@@ -394,6 +410,10 @@
   width: 100%;
 }
 .skill-defined-box h1.carousel-ux-ui {
+  font-family: "inria-sans-regular";
+  font-size: 20px;
+}
+.skill-defined-box h1.carousel-desarrollo-web {
   font-family: "inria-sans-regular";
   font-size: 20px;
 }
@@ -515,17 +535,4 @@
   text-align: right;
   padding: 2rem;
   margin-bottom: 0%;
-}
-
-/*utils*/
-/*GENERAL*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* BODY */
-body {
-  background-color: #fafafa;
 }
