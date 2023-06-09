@@ -13,6 +13,7 @@
     margin-top: 10%;
     margin-bottom: 10%;
     border-radius: 10px;
+    max-height: 100%;
     background-color: $colorwhite;
 
     /* Estilos del formulario */
@@ -20,7 +21,6 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2.5rem;
-        max-height: 90%;
         padding: 5%;
 
         /* Estilos de los grupos de campos */

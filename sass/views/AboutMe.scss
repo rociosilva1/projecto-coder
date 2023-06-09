@@ -2,3 +2,28 @@
 .title {
     font-family: "inria-sans";
 }
+
+button, input, optgroup, select, textarea {
+    font-family: 'inria-sans';
+}
+
+.accordion {
+    --bs-accordion-btn-focus-border-color: none; 
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: none;
+
+    .accordion-body {
+        font-family: 'inria-sans';
+    
+        p {
+            font-family: 'inria-sans-regular';
+        }
+    }
+      
+    .accordion-button:not(.collapsed) {
+        background-color: #D4B200;
+        color: #242121;
+        box-shadow: none;
+    }
+}
+

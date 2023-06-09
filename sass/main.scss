@@ -2,14 +2,15 @@
 @import './utils/global.scss';
 @import './utils/variables';
 
+/*Components*/
+@import './components/header.scss';
+@import './components/footer.scss';
+
 /*Pages*/
 @import './views/Index.scss';
 @import './views/AboutMe.scss';
 @import './views/Contact.scss';
+@import './views/projects.scss';
 @import './views/skills.scss';
-
-/*Components*/
-@import './components/header.scss';
-@import './components/footer.scss';
 
 
